@@ -7,9 +7,11 @@ interface ILayout {
 
 export default ({ children }: ILayout) => {
     return (
-        <div className="w-screen h-screen bg-red-500 px-5">
+        <>
             <Header />
-            {children}
-        </div>
+            <div className="w-screen h-screen">
+                {children}
+            </div>
+        </>
     );
 };
